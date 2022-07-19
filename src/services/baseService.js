@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useStore } from 'react-redux'
 
-const BASE_URL = 'http://backend-clinica-chevere.herokuapp.com'//'http://localhost:4000'
+const BASE_URL = process.env.REACT_APP_BACKENDURL//'http://localhost:4000'
 
 const useBaseService = () => {
   const { getState } = useStore()
